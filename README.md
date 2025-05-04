@@ -22,7 +22,7 @@
 
 | Area | Technologies |
 |------|-------------|
-| 📊 **Data Science & Analysis** | Python, Pandas, Plotly |
+| 📊 **Data Science & Analysis** | Python, Pandas, Plotly | Power BI
 | 🧠 **NLP & Machine Learning** | SpaCy, ParlBERT, GerVADER, WhisperX, scikit-learn |
 | 🧑🏽‍💻 **Webscrapping** | Jsoup, BS4 |
 | ⚙️ **Backend Development** | Java, MongoDB, RESTful APIs |
