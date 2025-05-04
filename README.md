@@ -13,32 +13,39 @@
 
 ---
 
-### ✨ What I Do
-- 📊 Data Science & Analysis (Python, Pandas, Plotly)
-- 🧠 NLP & Machine Learning (SpaCy, ParlBERT, GerVADER)
-- ⚙️ Backend Development (Java, MongoDB, RESTful APIs)
-- 🎓 Math Tutor & Coding Mentor
+## 🚀 About Me
+🔹 Passionate about AI, data science, and solving real-world problems through code  
+🔹 Mathematics enthusiast with a strong analytical mindset  
+🔹 Actively working on NLP, ML, and Backend Development  
 
 ---
 
-### 🔥 Featured Projects
+## 🛠 What I Do
+- 📊 **Data Science & Analysis** (Python, Pandas, Plotly)
+- 🧠 **NLP & Machine Learning** (SpaCy, ParlBERT, GerVADER, WhisperX, Scikit-learn)
+- 🧑🏽‍💻 **Web Scraping** (Jsoup, BeautifulSoup)
+- ⚙️ **Backend Development** (Java, MongoDB, RESTful APIs)
+- 🎓 **Math Tutor & Coding Mentor**
+
+---
+
+## 🔥 Featured Projects
 
 🚗 **Tesla Stock & Revenue Dashboard**  
 Live dashboard analyzing Tesla financials using SEC data.  
-<a href="https://github.com/SolomonM-Kebede/Tesla-Revenue-and-Stock-data-Analysis.git">🌐 GitHub Link</a>
+🔗 [GitHub Repository](https://github.com/SolomonM-Kebede/Tesla-Revenue-and-Stock-data-Analysis.git)
 
 🧠 **Java-Based NLP Pipeline**  
 Scraper, UIMA pipeline, WhisperX transcription & REST API.  
-<a href="https://github.com/SolomonM-Kebede/NLP-with-Java.git">🌐 GitHub Link</a>
+🔗 [GitHub Repository](https://github.com/SolomonM-Kebede/NLP-with-Java.git)
 
 📰 **Fake News Classifier (ML + Streamlit)**  
 Real-time classification of articles using NLP + ML.  
-<a href="https://github.com/SolomonM-Kebede/Machine-Learning-with-streamlit.git">🌐 GitHub Link</a>
+🔗 [GitHub Repository](https://github.com/SolomonM-Kebede/Machine-Learning-with-streamlit.git)
 
 ---
 
-### 📈 GitHub Stats
-
+## 📈 GitHub Stats  
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=SolomonM-Kebede&show_icons=true&theme=tokyonight" alt="GitHub Stats">
   <img src="https://github-readme-streak-stats.herokuapp.com?user=SolomonM-Kebede&theme=tokyonight" alt="GitHub Streak">
@@ -46,10 +53,10 @@ Real-time classification of articles using NLP + ML.
 
 ---
 
-### 💡 Currently Exploring
-- 🎙 Speech-to-text alignment using Whisper & DUUI
-- 🤖 Transformers and LLMs (ParlBERT, BERT embeddings)
-- 📈 Network-based speech similarity analysis with D3.js
+## 🚀 Currently Exploring
+- 🎙 **Speech-to-text alignment** using Whisper & DUUI  
+- 🤖 **Transformers and LLMs** (ParlBERT, BERT embeddings)  
+- 📈 **Network-based speech similarity analysis** with D3.js  
 
 ---
 
