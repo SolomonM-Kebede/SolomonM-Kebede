@@ -105,9 +105,9 @@ mindmap
       d3.js
       Speech Similarity
 
-
-</div>
 ```
+</div>
+
 ---
 
 <div align="center">
