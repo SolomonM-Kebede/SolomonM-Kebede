@@ -84,9 +84,6 @@
 
 ---
 
-## 💡 Currently Exploring
-
-<div align="center">
 
 ## 💡 Currently Exploring
 
@@ -96,14 +93,14 @@
 mindmap
   root((🔬 Focus Areas))
     🗣 Speech Processing
-      Whisper
-      DUUI
-    🧠 NLP with Transformers
-      ParlBERT
-      BERT Embeddings
+      ((🧠 Whisper))
+      ((🔧 DUUI Integration))
+    🤖 Transformer-based NLP
+      ((🪶 ParlBERT))
+      ((🔡 BERT Embeddings))
     🌐 Data Visualization
-      d3.js
-      Speech Similarity
+      ((📊 d3.js))
+      ((🕸 Speech Similarity Graphs))
 
 ```
 </div>
