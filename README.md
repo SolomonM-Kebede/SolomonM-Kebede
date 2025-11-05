@@ -91,15 +91,15 @@
 ```mermaid
 mindmap
   root((Current Focus))
-    🎙 Speech-to-text
+    🎙 Speech-to-Text
       Whisper
-      DUUI
-    🤖 Transformers
+      DUUI Integration
+    🤖 Transformer-Based NLP
       ParlBERT
-      BERT embeddings
-    📈 Network Analysis
-      Speech similarity
-      D3.js
+      BERT Embeddings
+    📈 Network & Semantic Analysis
+      Speech Similarity
+      d3.js Visualizations
 ```
 
 </div>
