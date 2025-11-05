@@ -88,22 +88,26 @@
 
 <div align="center">
 
+## 💡 Currently Exploring
+
+<div align="center">
+
 ```mermaid
 mindmap
-  root((Current Focus))
-    🎙 Speech-to-Text
+  root((🔬 Focus Areas))
+    🗣 Speech Processing
       Whisper
-      DUUI Integration
-    🤖 Transformer-Based NLP
+      DUUI
+    🧠 NLP with Transformers
       ParlBERT
       BERT Embeddings
-    📈 Network & Semantic Analysis
+    🌐 Data Visualization
+      d3.js
       Speech Similarity
-      d3.js Visualizations
-```
+
 
 </div>
-
+```
 ---
 
 <div align="center">
