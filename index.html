@@ -332,6 +332,25 @@
             transform: translateY(-2px);
         }
 
+        .contact-icon i {
+            font-size: 1.3rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        /* Hover effects */
+        .contact-link:hover .fa-envelope {
+            color: #f4b400; /* email accent */
+        }
+        
+        .contact-link:hover .fa-linkedin {
+            color: #0a66c2; /* LinkedIn blue */
+        }
+        
+        .contact-link:hover .contact-icon i {
+            transform: scale(1.2);
+        }
+
+
         /* Scroll indicator */
         .scroll-indicator {
             position: absolute;
@@ -1038,13 +1057,19 @@
             </div>
             <div class="contact-links">
                 <a href="mailto:solmenge@live.com" class="contact-link reveal">
-                    <span class="contact-icon">📧</span>
+                    <span class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
                     <span>solmenge@live.com</span>
                 </a>
+                
                 <a href="https://www.linkedin.com/in/solomen" class="contact-link reveal" target="_blank">
-                    <span class="contact-icon">💼</span>
+                    <span class="contact-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </span>
                     <span>LinkedIn Profile</span>
                 </a>
+
                 <a href="https://github.com/SolomonM-Kebede" class="contact-link reveal" target="_blank">
                     <span class="contact-icon">
                         <i class="fa-brands fa-github"></i>
