@@ -92,18 +92,17 @@
 
 ## 💡 Currently Exploring
 
-<div align="center">
+🗣 **Speech Processing**  
+WhisperX · DUUI · Audio Pipelines  
 
- ```mermaid
-graph TD
-    Speech["🗣 Speech Processing<br/>WhisperX · DUUI"]
-    NLP["🤖 Transformer NLP<br/>ParlBERT · BERT"]
-    Viz["🌐 Data Visualization<br/>d3.js · Graphs"]
+🤖 **Transformer-based NLP**  
+ParlBERT · BERT · Embeddings  
 
-    Speech --> NLP
-    NLP --> Viz
-```
+🌐 **Data Visualization**  
+d3.js · Network Graphs · Similarity Analysis  
 
+☁️ **Home Lab & Private Cloud**  
+Self-hosting · Virtualization · Networking · Automation  
 
 ---
 
