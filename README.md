@@ -9,8 +9,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/solomen)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SolomonM-Kebede)
 [![Location](https://img.shields.io/badge/Location-Frankfurt-4285F4?style=for-the-badge&logo=google-maps&logoColor=white)](https://g.co/kgs/JDMckxk)
-[![Website]([https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=website&logoColor=white](https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=firefox-browser&logoColor=white
-))](https://solomonm-kebede.github.io/SolomonM-Kebede/)
+[![Website](https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://solomonm-kebede.github.io/SolomonM-Kebede/)
 
 </div>
 
