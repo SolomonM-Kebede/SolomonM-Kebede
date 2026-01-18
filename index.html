@@ -190,6 +190,7 @@
             padding: 8rem 4rem 4rem;
             position: relative;
             overflow: hidden;
+            --hero-title-scale: 0.85;
         }
 
         .hero-background {
@@ -238,14 +239,11 @@
         }
 
         .hero h1 {
-            font-family: 'Syne', sans-serif;
-            font-size: clamp(3.5rem, 9vw, 8rem);
-            font-weight: 800;
-            line-height: 1;
-            letter-spacing: -3px;
-            margin-bottom: 2rem;
-            opacity: 0;
-            animation: fadeInUp 0.8s ease forwards 0.4s;
+            font-size: clamp(
+                calc(3.5rem * var(--hero-title-scale)),
+                calc(9vw * var(--hero-title-scale)),
+                calc(8rem * var(--hero-title-scale))
+            );
         }
 
         .hero h1 .gradient-text {
