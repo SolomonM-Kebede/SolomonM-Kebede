@@ -102,7 +102,7 @@ ParlBERT · BERT · Embeddings
 d3.js · Network Graphs · Similarity Analysis  
 
 ☁️ **Home Lab & Private Cloud**  
-Self-hosting · Virtualization · Networking · Automation  
+Self-hosting ·Proxmox·Docker· Virtualization · Networking · Automation  
 
 ---
 
