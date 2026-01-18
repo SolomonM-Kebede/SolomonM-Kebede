@@ -93,6 +93,8 @@
 ## 💡 Currently Exploring
 
 <div align="center">
+
+  ```mermaid
 flowchart LR
     A[🔬 Current Focus Areas]
 
@@ -113,6 +115,7 @@ flowchart LR
 
     class A core
     class B,C,D,B1,B2,C1,C2,D1,D2 node
+```
 </div>
 
 ---
