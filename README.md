@@ -94,20 +94,14 @@
 
 <div align="center">
 
-```mermaid
-mindmap
-  root((🔬 Focus Areas))
-    🗣 Speech Processing
-      ((🧠 Whisper))
-      ((🔧 DUUI Integration))
-    🤖 Transformer-based NLP
-      ((🪶 ParlBERT))
-      ((🔡 BERT Embeddings))
-    🌐 Data Visualization
-      ((📊 d3.js))
-      ((🕸 Speech Similarity Graphs))
+graph TD
+    Speech[🗣 Speech Processing<br/>WhisperX · DUUI]
+    NLP[🤖 Transformer NLP<br/>ParlBERT · BERT]
+    Viz[🌐 Data Visualization<br/>d3.js · Graphs]
 
-```
+    Speech --> NLP
+    NLP --> Viz
+
 </div>
 
 ---
