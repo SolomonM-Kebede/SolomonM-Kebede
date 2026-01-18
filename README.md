@@ -79,8 +79,8 @@
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SolomonM-Kebede&show_icons=true&theme=tokyonight" width="48%" alt="GitHub Stats">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=SolomonM-Kebede&theme=tokyonight" width="48%" alt="GitHub Streak">
+  <img src="https://github-readme-stats.vercel.app/api?username=SolomonM-Kebede&show_icons=true&theme=tokyonight" width="48%" alt="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com?user=SolomonM-Kebede&theme=tokyonight" width="48%" alt="GitHub Streak" />
 </div>
 
 ---
