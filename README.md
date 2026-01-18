@@ -94,28 +94,17 @@
 
 <div align="center">
 
-  ```mermaid
-flowchart LR
-    A[🔬 Current Focus Areas]
+ ## 💡 Currently Exploring
 
-    A --> B[🗣 Speech Processing]
-    B --> B1[🎙 Whisper / WhisperX]
-    B --> B2[🔧 DUUI Integration]
+- 🗣 **Speech Processing**  
+  *WhisperX · DUUI · Audio Pipelines*
 
-    A --> C[🤖 Transformer NLP]
-    C --> C1[🪶 ParlBERT]
-    C --> C2[🔡 BERT Embeddings]
+- 🤖 **Transformer-based NLP**  
+  *ParlBERT · BERT · Embeddings*
 
-    A --> D[🌐 Data Visualization]
-    D --> D1[📊 d3.js]
-    D --> D2[🕸 Speech Similarity Graphs]
+- 🌐 **Data Visualization**  
+  *d3.js · Network Graphs · Similarity Analysis*
 
-    classDef core fill:#1a1b27,stroke:#70a5fd,color:#fff
-    classDef node fill:#24283b,stroke:#bb9af7,color:#fff
-
-    class A core
-    class B,C,D,B1,B2,C1,C2,D1,D2 node
-```
 </div>
 
 ---
