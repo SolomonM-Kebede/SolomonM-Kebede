@@ -485,6 +485,18 @@
             transition: opacity 0.5s ease;
         }
 
+        .project-visual img {
+            width: 110px;
+            height: auto;
+            transition: transform 0.4s ease;
+            cursor: pointer;
+        }
+        
+        .project-visual:hover img {
+            transform: scale(2); 
+        }
+
+
         .project-item:hover .project-visual::before {
             opacity: 1;
         }
@@ -879,7 +891,7 @@
                 <div class="project-visual">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Circumplex_model_of_emotion.svg/1280px-Circumplex_model_of_emotion.svg.png"
                         alt="VA"
-                        style= "width:80px; height:auto;">
+                        style= "width:110px; height:auto;">
                 </div>
                 <div class="project-content">
                     <span class="project-badge">NLP Pipeline</span>
