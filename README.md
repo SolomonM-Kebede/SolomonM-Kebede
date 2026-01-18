@@ -94,18 +94,16 @@
 
 <div align="center">
 
- ## 💡 Currently Exploring
+ ```mermaid
+graph TD
+    Speech["🗣 Speech Processing<br/>WhisperX · DUUI"]
+    NLP["🤖 Transformer NLP<br/>ParlBERT · BERT"]
+    Viz["🌐 Data Visualization<br/>d3.js · Graphs"]
 
-- 🗣 **Speech Processing**  
-  *WhisperX · DUUI · Audio Pipelines*
+    Speech --> NLP
+    NLP --> Viz
+```
 
-- 🤖 **Transformer-based NLP**  
-  *ParlBERT · BERT · Embeddings*
-
-- 🌐 **Data Visualization**  
-  *d3.js · Network Graphs · Similarity Analysis*
-
-</div>
 
 ---
 
