@@ -92,17 +92,27 @@
 
 ## 💡 Currently Exploring
 
-<div align="center">
+flowchart LR
+    A[🔬 Current Focus Areas]
 
-graph TD
-    Speech[🗣 Speech Processing<br/>WhisperX · DUUI]
-    NLP[🤖 Transformer NLP<br/>ParlBERT · BERT]
-    Viz[🌐 Data Visualization<br/>d3.js · Graphs]
+    A --> B[🗣 Speech Processing]
+    B --> B1[🎙 Whisper / WhisperX]
+    B --> B2[🔧 DUUI Integration]
 
-    Speech --> NLP
-    NLP --> Viz
+    A --> C[🤖 Transformer NLP]
+    C --> C1[🪶 ParlBERT]
+    C --> C2[🔡 BERT Embeddings]
 
-</div>
+    A --> D[🌐 Data Visualization]
+    D --> D1[📊 d3.js]
+    D --> D2[🕸 Speech Similarity Graphs]
+
+    classDef core fill:#1a1b27,stroke:#70a5fd,color:#fff
+    classDef node fill:#24283b,stroke:#bb9af7,color:#fff
+
+    class A core
+    class B,C,D,B1,B2,C1,C2,D1,D2 node
+
 
 ---
 
