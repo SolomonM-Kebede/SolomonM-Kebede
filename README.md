@@ -80,7 +80,7 @@
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=SolomonM-Kebede&show_icons=true&theme=tokyonight" width="48%" alt="GitHub Stats" />
-  <img src="https://streak-stats.demolab.com?user=SolomonM-Kebede&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" />
+
 </div>
 
 
