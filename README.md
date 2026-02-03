@@ -78,11 +78,7 @@
 
 ## 📈 GitHub Stats
 
-<div align="center">
-  ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=SolomonM-Kebede&theme=tokyonight)
-
-
-</div>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SolomonM-Kebede&show_icons=true&theme=tokyonight)
 
 
 
