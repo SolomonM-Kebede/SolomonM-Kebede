@@ -81,7 +81,7 @@
 <div align="center">
   <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=SolomonM-Kebede&show_icons=true&theme=tokyonight" width="48%" alt="GitHub Stats" />
   
-  
+  <img src="https://github-readme-streak-stats-eight.vercel.app/?user=SolomonM-Kebede&theme=tokyonight&hide_border=true" width="48%" alt="GitHub Streak" />
 </div>
 
 
