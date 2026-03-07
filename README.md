@@ -1,6 +1,6 @@
 <div align="center">
   
-# 👨‍💻 Solomon Mengesha Kebede
+# Solomon Mengesha Kebede
 
 **Computer Science Student | Data Scientist in Training | AI Enthusiast**  
 *Mathematics + Code = My Language*
@@ -15,7 +15,7 @@
 
 ---
 
-## ✨ What I Do
+## What I Do
 
 <details open>
 <summary><b>My Expertise</b></summary>
@@ -33,7 +33,7 @@
 
 ---
 
-## 🔥 Featured Projects
+##  Featured Projects
 
 <div align="center">
 
@@ -53,7 +53,7 @@
     </td>
     <td width="33%" align="center">
       <img src="https://img.shields.io/badge/Project-NLP-FF6B6B?style=for-the-badge" alt="NLP Project"/><br>
-      <h3>🧠 Java-Based NLP Pipeline</h3>
+      <h3> Java-Based NLP Pipeline</h3>
       <p>Scraper, UIMA pipeline, WhisperX transcription & REST API.</p>
       <a href="https://github.com/SolomonM-Kebede/NLP-with-Java.git">
         <img src="https://img.shields.io/badge/View_Project-181717?style=flat-square&logo=github&logoColor=white" alt="View Project"/>
