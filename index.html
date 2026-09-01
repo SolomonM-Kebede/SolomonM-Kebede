@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Syne:wght@700;800&family=Archivo:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-
     <style>
         * {
             margin: 0;
@@ -281,24 +280,94 @@
             transform: translateY(-2px);
         }
 
+        /* News Ticker Section */
+        .news-ticker-section {
+            background: rgba(212, 175, 55, 0.05);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 4rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            z-index: 10;
+            position: relative;
+        }
+
+        .news-label {
+            font-family: 'Syne', sans-serif;
+            color: var(--accent-gold);
+            font-weight: 800;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .news-label i {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .news-container {
+            position: relative;
+            height: 1.5rem;
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        .news-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+            pointer-events: none;
+            color: var(--text-secondary);
+        }
+
+        .news-item.active {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .news-item a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            margin-left: 10px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .news-item a:hover {
+            color: var(--accent-gold);
+            text-decoration: underline;
+        }
+
         .contact-icon i {
             font-size: 1.3rem;
             transition: transform 0.3s ease, color 0.3s ease;
         }
         
-        /* Hover effects */
         .contact-link:hover .fa-envelope {
-            color: #f4b400; /* email accent */
+            color: #f4b400; 
         }
         
         .contact-link:hover .fa-linkedin {
-            color: #0a66c2; /* LinkedIn blue */
+            color: #0a66c2; 
         }
         
         .contact-link:hover .contact-icon i {
             transform: scale(1.2);
         }
-
 
         /* Scroll indicator */
         .scroll-indicator {
@@ -729,6 +798,17 @@
             .cursor, .cursor-follower {
                 display: none;
             }
+            
+            .news-ticker-section {
+                padding: 1rem 2rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            
+            .news-container {
+                height: 3rem; /* Allow wrapping on small screens */
+            }
         }
     </style>
 </head>
@@ -739,9 +819,9 @@
     <nav>
         <div class="logo">SMK</div>
         <ul class="nav-menu">
+            <li><a href="#current-work">Current Work</a></li>
             <li><a href="#expertise">Expertise</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#current-work">Current Work</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -781,9 +861,125 @@
             <div class="scroll-line"></div>
         </div>
     </section>
+
+    <!-- NEW TICKER SECTION -->
+    <div class="news-ticker-section">
+        <div class="news-label"><i class="fa-solid fa-bolt"></i> LATEST UPDATES</div>
+        <div class="news-container">
+            <div class="news-item active">
+                🎉 My research on Dimensional Aspect-Based Sentiment Analysis (DimABSA) was published at SemEval 2026! 
+                <a href="https://aclanthology.org/2026.semeval-1.82/" target="_blank">Read Paper <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="news-item">
+                🔬 Current Research: Proposing a new parameter-efficient Multi-Dialect Amharic ASR system using LoRA.
+            </div>
+            <div class="news-item">
+                🏆 Led a team to win 2nd place at the DB Techathon 2025 for building a scalable Sentiment Analysis system.
+            </div>
+        </div>
+    </div>
+
+    <!-- CURRENT WORK SECTION MOVED TO TOP -->
+    <section id="current-work">
+        <div class="section-header reveal">
+            <div class="section-number">01 — CURRENT WORK</div>
+            <h2 class="section-title">What I'm Working On</h2>
+        </div>
+        <div class="expertise-grid">
+            <div class="expertise-card reveal">
+                <div class="expertise-number">01</div>
+                <div class="project-visual">
+                    <img src="https://www.mdpi.com/applsci/applsci-11-00880/article_deploy/html/images/applsci-11-00880-g003.png" 
+                         alt="va" 
+                         style="width:48px; height:auto;">
+                </div>
+
+                <h3 class="expertise-title">Transformer-Based Sentiment Analysis</h3>
+                <p class="expertise-description">
+                    Developing advanced sentiment analysis using DimABSA (Dimensional Aspect-Based Sentiment Analysis) 
+                    with transformer architectures for nuanced emotion detection and aspect-level sentiment extraction.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">DimABSA</span>
+                    <span class="tech-tag">Transformers</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">BERT</span>
+                    <span class="tech-tag">flan-f5</span>
+                    <span class="tech-tag">pipeline</span>
+                </div>
+            </div>
+            <div class="expertise-card reveal">
+                <div class="expertise-number">02</div>
+                <div class="project-visual">
+                    <img src="https://assets.toptal.io/images?url=https%3A%2F%2Fbs-uploads.toptal.io%2Fblackfish-uploads%2Fcomponents%2Fblog_post_page%2F10672265%2Fcover_image%2Fretina_500x200%2Funnamed-ab3d7d0458b847f852e0d7e941a310bb.png&quality=75" 
+                         alt="va" 
+                         style="width:48px; height:auto;">
+                </div>
+
+                <h3 class="expertise-title">Multi-Dialect Amharic Language Automatic Speech Recognition</h3>
+                <p class="expertise-description">
+                    Parameter-efficient fine-tuning (LoRA) of OpenAI's Whisper model targeting regional dialects of Amharic, 
+                    a low-resource language spoken by 80 million people. Features custom script normalization pipelines and 
+                    low-VRAM deployment setups to accurately parse crowdsourced African regional audio datasets.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Whisper Large</span>
+                    <span class="tech-tag">Transformers</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">LoRa(PEFT)</span>
+                    <span class="tech-tag">RAY-HPO</span>
+                    <span class="tech-tag">pipeline</span>
+                </div>
+            </div>
+
+            <div class="expertise-card reveal">
+                <div class="expertise-number">03</div>
+                <div class="project-visual">
+                    <img src="https://thumbs.dreamstime.com/b/futuristic-digital-interface-displaying-cloud-computing-concept-central-cloud-icon-up-down-arrows-represents-data-392165284.jpg" 
+                         alt="va" 
+                         style="width:48px; height:auto;">
+                </div>
+                <h3 class="expertise-title">Home Lab & Private Cloud</h3>
+                <p class="expertise-description">
+                    Building a comprehensive home lab infrastructure with private cloud capabilities for 
+                    self-hosting services, running ML experiments, and learning enterprise-level DevOps and Cyber security practices.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Proxmox</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Kubernetes</span>
+                    <span class="tech-tag">attack simulation</span>
+                    <span class="tech-tag">OPNSense</span>
+                    <span class="tech-tag">Networking</span>
+                </div>
+            </div>
+
+            <div class="expertise-card reveal">
+                <div class="expertise-number">04</div>
+                <div class="project-visual">
+                    <img src="https://miro.medium.com/1*jD3PGW2dMcG065QExWRsgg.png" 
+                         alt="va" 
+                         style="width:48px; height:auto;">
+                </div>
+                <h3 class="expertise-title">AI Safety Research Paper</h3>
+                <p class="expertise-description">
+                    Contributing to AI safety seminar by investigating alignment problems, robustness challenges, 
+                    and ethical considerations in deploying large language models and AI systems.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">AI Ethics</span>
+                    <span class="tech-tag">Safety</span>
+                    <span class="tech-tag">Presentation and Paper</span>
+                    <span class="tech-tag">Alignment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE SECTION -->
     <section id="expertise">
         <div class="section-header reveal">
-            <div class="section-number">01 — EXPERTISE</div>
+            <div class="section-number">02 — EXPERTISE</div>
             <h2 class="section-title">What I Do</h2>
         </div>
         <div class="expertise-grid">
@@ -860,6 +1056,7 @@
         </div>
     </section>
 
+    <!-- STATS SECTION -->
     <div class="stats-wrapper">
         <div class="stats-grid">
             <div class="stat-item reveal">
@@ -877,9 +1074,10 @@
         </div>
     </div>
 
+    <!-- PROJECTS SECTION -->
     <section id="projects">
         <div class="section-header reveal">
-            <div class="section-number">02 — PROJECTS</div>
+            <div class="section-number">03 — PROJECTS</div>
             <h2 class="section-title">Featured Work</h2>
         </div>
         <div class="projects-container">
@@ -940,102 +1138,7 @@
         </div>
     </section>
 
-    <section id="current-work">
-        <div class="section-header reveal">
-            <div class="section-number">03 — CURRENT WORK</div>
-            <h2 class="section-title">What I'm Working On</h2>
-        </div>
-        <div class="expertise-grid">
-            <div class="expertise-card reveal">
-                <div class="expertise-number">01</div>
-                <div class="project-visual">
-                    <img src="https://www.mdpi.com/applsci/applsci-11-00880/article_deploy/html/images/applsci-11-00880-g003.png" 
-                         alt="va" 
-                         style="width:48px; height:auto;">
-                </div>
-
-                <h3 class="expertise-title">Transformer-Based Sentiment Analysis</h3>
-                <p class="expertise-description">
-                    Developing advanced sentiment analysis using DimABSA (Dimensional Aspect-Based Sentiment Analysis) 
-                    with transformer architectures for nuanced emotion detection and aspect-level sentiment extraction.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">DimABSA</span>
-                    <span class="tech-tag">Transformers</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">BERT</span>
-                    <span class="tech-tag">flan-f5</span>
-                    <span class="tech-tag">pipeline</span>
-                </div>
-            </div>
-            <div class="expertise-card reveal">
-                <div class="expertise-number">01</div>
-                <div class="project-visual">
-                    <img src="https://assets.toptal.io/images?url=https%3A%2F%2Fbs-uploads.toptal.io%2Fblackfish-uploads%2Fcomponents%2Fblog_post_page%2F10672265%2Fcover_image%2Fretina_500x200%2Funnamed-ab3d7d0458b847f852e0d7e941a310bb.png&quality=75" 
-                         alt="va" 
-                         style="width:48px; height:auto;">
-                </div>
-
-                <h3 class="expertise-title">Multi-Dialect Amharic Language Automatic Speech Recognition</h3>
-                <p class="expertise-description">
-                    Parameter-efficient fine-tuning (LoRA) of OpenAI's Whisper model targeting regional dialects of Amharic, 
-                    a low-resource language spoken by 80 million people. Features custom script normalization pipelines and 
-                    low-VRAM deployment setups to accurately parse crowdsourced African regional audio datasets.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Whisper Large</span>
-                    <span class="tech-tag">Transformers</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">LoRa(PEFT)</span>
-                    <span class="tech-tag">RAY-HPO</span>
-                    <span class="tech-tag">pipeline</span>
-                </div>
-            </div>
-
-            <div class="expertise-card reveal">
-                <div class="expertise-number">02</div>
-                <div class="project-visual">
-                    <img src="https://thumbs.dreamstime.com/b/futuristic-digital-interface-displaying-cloud-computing-concept-central-cloud-icon-up-down-arrows-represents-data-392165284.jpg" 
-                         alt="va" 
-                         style="width:48px; height:auto;">
-                </div>
-                <h3 class="expertise-title">Home Lab & Private Cloud</h3>
-                <p class="expertise-description">
-                    Building a comprehensive home lab infrastructure with private cloud capabilities for 
-                    self-hosting services, running ML experiments, and learning enterprise-level DevOps and Cyber security practices.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Proxmox</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Kubernetes</span>
-                    <span class="tech-tag">attack simulation</span>
-                    <span class="tech-tag">OPNSense</span>
-                    <span class="tech-tag">Networking</span>
-                </div>
-            </div>
-
-            <div class="expertise-card reveal">
-                <div class="expertise-number">03</div>
-                <div class="project-visual">
-                    <img src="https://miro.medium.com/1*jD3PGW2dMcG065QExWRsgg.png" 
-                         alt="va" 
-                         style="width:48px; height:auto;">
-                </div>
-                <h3 class="expertise-title">AI Safety Research Paper</h3>
-                <p class="expertise-description">
-                    Contributing to AI safety seminar by investigating alignment problems, robustness challenges, 
-                    and ethical considerations in deploying large language models and AI systems.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">AI Ethics</span>
-                    <span class="tech-tag">Safety</span>
-                    <span class="tech-tag">Presentation and Paper</span>
-                    <span class="tech-tag">Alignment</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- CONTACT SECTION -->
     <section id="contact">
         <div class="section-header reveal">
             <div class="section-number">04 — CONTACT</div>
@@ -1104,6 +1207,17 @@
                 cursorFollower.style.top = e.clientY + 'px';
             }, 100);
         });
+
+        // News Ticker logic
+        const newsItems = document.querySelectorAll('.news-item');
+        if (newsItems.length > 0) {
+            let currentNewsIndex = 0;
+            setInterval(() => {
+                newsItems[currentNewsIndex].classList.remove('active');
+                currentNewsIndex = (currentNewsIndex + 1) % newsItems.length;
+                newsItems[currentNewsIndex].classList.add('active');
+            }, 5000);
+        }
 
         // Scroll reveal animation
         const reveals = document.querySelectorAll('.reveal');
