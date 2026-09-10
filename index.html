@@ -185,7 +185,6 @@
             justify-content: center;
             text-align: center;
             position: relative;
-            /* Added top padding to prevent nav overlap */
             padding: 8rem 2rem 4rem; 
         }
         
@@ -447,6 +446,8 @@
             border: 1px solid var(--border);
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column; /* Added to position link/stack nicely */
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -499,8 +500,9 @@
 
         .expertise-description {
             color: var(--text-secondary);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             line-height: 1.7;
+            flex-grow: 1; /* Pushes bottom elements down */
         }
 
         .tech-stack {
@@ -572,7 +574,7 @@
         }
         
         .project-visual:hover img {
-            transform: scale(6); 
+            transform: scale(1.1); /* Adjusted scale for DimABSA and others to prevent overflowing viewport excessively */
         }
 
 
@@ -783,7 +785,6 @@
             }
 
             .hero {
-                /* Ensures plenty of space on mobile too */
                 padding: 8rem 2rem 4rem; 
             }
 
@@ -811,7 +812,7 @@
             }
             
             .news-container {
-                height: 4.5rem; /* Allow wrapping on small screens */
+                height: 4.5rem;
             }
         }
     </style>
@@ -834,26 +835,19 @@
         <div class="hero-background"></div>
     
         <div class="hero-content">
-    
-            <!-- Profile Image -->
             <img src="photo1.jpg" alt="Solomon Mengesha Kebede" class="profile-pic">
-    
             <div class="hero-label">Data Scientist & Developer</div>
-    
             <h1>
                 Solomon<br>
                 <span class="gradient-text">Mengesha Kebede</span>
             </h1>
-    
             <p class="hero-subtitle">
                 Transforming data into insights, complexity into clarity
             </p>
-    
             <p class="hero-description">
                 Computer Science student passionate about machine learning, natural language processing,
                 and building intelligent systems that solve real-world problems. Based in Frankfurt, Germany.
             </p>
-    
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn">Get In Touch</a>
@@ -866,7 +860,7 @@
         </div>
     </section>
 
-    <!-- NEW TICKER SECTION -->
+    <!-- TICKER SECTION -->
     <div class="news-ticker-section">
         <div class="news-label"><i class="fa-solid fa-bolt"></i> LATEST UPDATES</div>
         <div class="news-container">
@@ -876,6 +870,7 @@
             </div>
             <div class="news-item">
                 Current Research: Proposing a new parameter-efficient Multi-Dialect Amharic ASR system using LoRA.
+                <a href="https://github.com/SolomonM-Kebede/AmharicASR.git" target="_blank">GitHub repo<i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="news-item">
                 Led a team at the DB Techathon 2025 for building a scalable Sentiment Analysis system.
@@ -883,7 +878,7 @@
         </div>
     </div>
 
-    <!-- CURRENT WORK SECTION MOVED TO TOP -->
+
     <section id="current-work">
         <div class="section-header reveal">
             <div class="section-number">01 — CURRENT WORK</div>
@@ -893,39 +888,20 @@
             <div class="expertise-card reveal">
                 <div class="expertise-number">01</div>
                 <div class="project-visual">
-                    <img src="https://www.mdpi.com/applsci/applsci-11-00880/article_deploy/html/images/applsci-11-00880-g003.png" 
-                         alt="va" 
-                         style="width:48px; height:auto;">
-                </div>
-
-                <h3 class="expertise-title">Transformer-Based Sentiment Analysis</h3>
-                <p class="expertise-description">
-                    Developing advanced sentiment analysis using DimABSA (Dimensional Aspect-Based Sentiment Analysis) 
-                    with transformer architectures for nuanced emotion detection and aspect-level sentiment extraction.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">DimABSA</span>
-                    <span class="tech-tag">Transformers</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">BERT</span>
-                    <span class="tech-tag">flan-f5</span>
-                    <span class="tech-tag">pipeline</span>
-                </div>
-            </div>
-            <div class="expertise-card reveal">
-                <div class="expertise-number">02</div>
-                <div class="project-visual">
                     <img src="https://assets.toptal.io/images?url=https%3A%2F%2Fbs-uploads.toptal.io%2Fblackfish-uploads%2Fcomponents%2Fblog_post_page%2F10672265%2Fcover_image%2Fretina_500x200%2Funnamed-ab3d7d0458b847f852e0d7e941a310bb.png&quality=75" 
                          alt="va" 
                          style="width:48px; height:auto;">
                 </div>
 
-                <h3 class="expertise-title">Multi-Dialect Amharic Language Automatic Speech Recognition</h3>
+                <h3 class="expertise-title">Multi-Dialect Amharic Language ASR</h3>
                 <p class="expertise-description">
                     Parameter-efficient fine-tuning (LoRA) of OpenAI's Whisper model targeting regional dialects of Amharic, 
                     a low-resource language spoken by 80 million people. Features custom script normalization pipelines and 
                     low-VRAM deployment setups to accurately parse crowdsourced African regional audio datasets.
                 </p>
+                <a href="https://github.com/SolomonM-Kebede/AmharicASR.git" class="project-link" target="_blank" style="margin-bottom: 1.5rem; font-size: 1rem;">
+                    GitHub Repo
+                </a>
                 <div class="tech-stack">
                     <span class="tech-tag">Whisper Large</span>
                     <span class="tech-tag">Transformers</span>
@@ -937,7 +913,7 @@
             </div>
 
             <div class="expertise-card reveal">
-                <div class="expertise-number">03</div>
+                <div class="expertise-number">02</div>
                 <div class="project-visual">
                     <img src="https://thumbs.dreamstime.com/b/futuristic-digital-interface-displaying-cloud-computing-concept-central-cloud-icon-up-down-arrows-represents-data-392165284.jpg" 
                          alt="va" 
@@ -948,6 +924,9 @@
                     Building a comprehensive home lab infrastructure with private cloud capabilities for 
                     self-hosting services, running ML experiments, and learning enterprise-level DevOps and Cyber security practices.
                 </p>
+                <a href="https://github.com/SolomonM-Kebede" class="project-link" target="_blank" style="margin-bottom: 1.5rem; font-size: 1rem;">
+                    View Architecture
+                </a>
                 <div class="tech-stack">
                     <span class="tech-tag">Proxmox</span>
                     <span class="tech-tag">Docker</span>
@@ -959,7 +938,7 @@
             </div>
 
             <div class="expertise-card reveal">
-                <div class="expertise-number">04</div>
+                <div class="expertise-number">03</div>
                 <div class="project-visual">
                     <img src="https://miro.medium.com/1*jD3PGW2dMcG065QExWRsgg.png" 
                          alt="va" 
@@ -970,6 +949,9 @@
                     Contributing to AI safety seminar by investigating alignment problems, robustness challenges, 
                     and ethical considerations in deploying large language models and AI systems.
                 </p>
+                <a href="https://github.com/SolomonM-Kebede" class="project-link" target="_blank" style="margin-bottom: 1.5rem; font-size: 1rem;">
+                    Read Draft
+                </a>
                 <div class="tech-stack">
                     <span class="tech-tag">AI Ethics</span>
                     <span class="tech-tag">Safety</span>
@@ -1085,6 +1067,39 @@
             <h2 class="section-title">Featured Work</h2>
         </div>
         <div class="projects-container">
+            
+            <!-- DimABSA Moved Here -->
+            <div class="project-item reveal">
+                <div class="project-visual">
+                    <img src="https://www.mdpi.com/applsci/applsci-11-00880/article_deploy/html/images/applsci-11-00880-g003.png" 
+                         alt="DimABSA" 
+                         style="width:120px; height:auto;">
+                </div>
+
+                <div class="project-content">
+                    <span class="project-badge">NLP Publication</span>
+                    <h3 class="project-title">Transformer-Based Sentiment Analysis</h3>
+                    <p class="project-description">
+                        Advanced sentiment analysis using DimABSA (Dimensional Aspect-Based Sentiment Analysis) 
+                        with transformer architectures for nuanced emotion detection and aspect-level sentiment extraction. 
+                        Accepted & Published at SemEval 2026.
+                    </p>
+                    <div class="tech-stack" style="margin-bottom: 2rem;">
+                        <span class="tech-tag">DimABSA</span>
+                        <span class="tech-tag">Transformers</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">BERT</span>
+                        <span class="tech-tag">flan-t5</span>
+                    </div>
+                    <a href="https://github.com/SolomonM-Kebede/ProjectNLP-DimABSA2026.git" class="project-link" target="_blank">
+                        GitHub Repo
+                    </a>
+                    <a href="https://aclanthology.org/2026.semeval-1.82/" class="project-link" target="_blank" style="margin-left: 2rem;">
+                        Read Paper
+                    </a>
+                </div>
+            </div>
+
             <div class="project-item reveal">
                 <div class="project-visual">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg" 
@@ -1177,7 +1192,6 @@
                     </span>
                     <span>GitHub Portfolio</span>
                 </a>
-
 
                 <a href="https://g.co/kgs/JDMckxk" class="contact-link reveal" target="_blank">
                     <span class="contact-icon">📍</span>
