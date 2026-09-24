@@ -91,7 +91,7 @@
 
 ## 💡 Currently Exploring
 
-💬 Multi-Dialects Amharic Automatic Speech Recognition 
+💬 **Multi-Dialects Amharic Automatic Speech Recognition** 
 Whisper Large v3 · Data Pipelines · LoRa · Ray HPO
 
 🗣 **Speech Processing**  
